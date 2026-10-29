@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frighi83.github.io/sitemap.xml
