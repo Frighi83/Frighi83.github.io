@@ -55,3 +55,31 @@ h2.sezione small{display:block;font-size:.95rem;font-weight:400;color:var(--grig
 #assistix .testa{margin-top:18px}
 #assistix .testa>div{padding-top:6px}
 #assistix .icona{width:72px;height:72px;border-radius:18px;border:0}
+
+.dettagli{margin-top:12px;border:1px solid var(--bordo);border-radius:14px;background:var(--carta2)}
+.dettagli summary{cursor:pointer;list-style:none;padding:10px 14px;font-weight:700;color:var(--accento);display:flex;align-items:center;gap:8px}
+.dettagli summary::-webkit-details-marker{display:none}
+.dettagli summary::before{content:"+";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(143,176,255,.15);font-weight:800}
+.dettagli[open] summary::before{content:"–"}
+.dettagli .testo{padding:0 16px 14px;color:var(--testo);font-size:.96rem}
+.dettagli .testo h4{margin:14px 0 4px;font-size:.95rem;color:var(--accento)}
+.dettagli .testo p{margin:8px 0}
+.dettagli .testo ul{margin:4px 0;padding-left:1.2em}
+.galleria{scrollbar-width:thin;scrollbar-color:#3a4180 transparent}
+.galleria::-webkit-scrollbar{height:6px}
+.galleria::-webkit-scrollbar-track{background:transparent}
+.galleria::-webkit-scrollbar-thumb{background:#3a4180;border-radius:999px}
+#assistix{max-width:760px;margin-left:auto;margin-right:auto}
+.griglia:has(#assistix){display:block}
+
+.pagina-app{max-width:860px;padding-top:24px}
+.titolo-app{margin:0 0 2px;font-size:1.6rem;line-height:1.2}
+.pagina-app h2.sotto{font-size:1.1rem;margin:24px 0 0;color:var(--grigio)}
+.pagina-app .galleria img{height:420px}
+.pagina-app .galleria.orizz img{height:260px}
+.descrizione{margin-top:18px;font-size:1.02rem}
+.descrizione h3{margin:22px 0 6px;font-size:1.05rem;color:var(--accento)}
+.descrizione p{margin:10px 0}
+.descrizione ul{margin:6px 0;padding-left:1.2em}
+.nota{text-align:center;color:var(--grigio);margin-top:20px}
+@media (max-width:600px){.pagina-app .galleria img{height:300px}.pagina-app .galleria.orizz img{height:180px}}
